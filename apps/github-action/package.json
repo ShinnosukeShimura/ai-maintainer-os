@@ -7,6 +7,10 @@
   "scripts": {
     "build": "tsc -p tsconfig.json"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@ai-maintainer-os/core": "workspace:*",
+    "@ai-maintainer-os/reports": "workspace:*",
+    "@ai-maintainer-os/github": "workspace:*"
+  },
   "devDependencies": {}
 }
