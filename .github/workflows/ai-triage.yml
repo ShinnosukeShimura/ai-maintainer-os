@@ -2,7 +2,9 @@ name: AI Maintainer OS
 
 on:
   issues:
-    types: [opened, edited]
+    types:
+      - opened
+      - edited
 
 permissions:
   issues: write
@@ -11,21 +13,26 @@ permissions:
 jobs:
   triage:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
         with:
-          version: 9.12.0
+          version: 9
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: pnpm
 
-      - run: pnpm install --frozen-lockfile=false
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
 
-      - run: pnpm build
+      - name: Build
+        run: pnpm build
 
       - name: Run AI Maintainer OS triage
         run: node apps/github-action/dist/index.js
