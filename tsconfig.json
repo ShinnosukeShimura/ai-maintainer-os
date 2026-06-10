@@ -1,0 +1,38 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./packages/core"
+    },
+    {
+      "path": "./packages/ai"
+    },
+    {
+      "path": "./packages/github"
+    },
+    {
+      "path": "./packages/reports"
+    },
+    {
+      "path": "./apps/cli"
+    },
+    {
+      "path": "./apps/github-action"
+    },
+    {
+      "path": "./apps/mcp-server"
+    },
+    {
+      "path": "./apps/discord-bot"
+    }
+  ],
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

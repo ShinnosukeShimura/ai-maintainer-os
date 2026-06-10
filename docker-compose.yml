@@ -1,0 +1,6 @@
+services:
+  ai-maintainer-os:
+    build: .
+    env_file:
+      - .env
+    command: ["node", "apps/cli/dist/index.js", "--help"]

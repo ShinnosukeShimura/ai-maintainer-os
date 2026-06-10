@@ -1,0 +1,10 @@
+name: "AI Maintainer OS"
+description: "AI-assisted issue and PR triage for OSS maintainers"
+inputs:
+  mode:
+    description: "auto, issue, pr, or report"
+    required: false
+    default: "auto"
+runs:
+  using: "node20"
+  main: "dist/index.js"
