@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="assets/logo.png" width="220" alt="AI Maintainer OS Logo">
+</p>
+
+<h1 align="center">AI Maintainer OS</h1>
+
+<p align="center">
+AI-powered operating system for OSS maintainers
+</p>
+
 # AI Maintainer OS
 
 Reduce maintainer burnout with AI-powered repository operations.
