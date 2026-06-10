@@ -40,6 +40,30 @@ AI Maintainer OS reduces repetitive maintenance work so maintainers can focus on
 
 ## Vision
 
+## Architecture
+
+```text
+GitHub Issues / Pull Requests
+                │
+                ▼
+        AI Maintainer OS
+                │
+ ┌──────────────┼──────────────┐
+ ▼              ▼              ▼
+Labels       Comments      Reports
+                │
+                ▼
+       Discord / MCP Server
+```
+
+AI Maintainer OS sits between repository activity and maintainer workflows.
+
+It analyzes issues, pull requests, and repository health signals, then generates actionable recommendations while keeping maintainers in control.
+
+No automatic merges. No automatic code changes.
+
+Human judgment remains the final authority.
+
 Build an open-source operating system for repository health, contributor management, and maintainer sustainability.
 
 Human judgment remains in control. AI provides recommendations, summaries, and automation support.
